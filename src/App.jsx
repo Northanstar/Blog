@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Register from './Pages/Register';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import Login from './Pages/Login';
+import Reset from './Pages/Reset';
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/reset' element={<Reset />} />
        </Routes>    
     </div>
   )
