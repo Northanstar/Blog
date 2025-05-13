@@ -9,7 +9,7 @@ import { auth } from '../src/Firebaseconfig';
 import { signOut } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
-
+import Createform from './Pages/Createform';
 
 const App = () => {
 
@@ -28,6 +28,7 @@ const App = () => {
         <Route path='/register' element={<Register setIsAuth={setIsAuth} />} />
         <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
         <Route path='/reset' element={<Reset />} />
+        <Route path='/createpost' element={<Createform />} />
        </Routes>    
     </div>
   )

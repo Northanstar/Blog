@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className='nav'>
      <Link to='/' >Blog</Link>
      <Link to='/login'>Login</Link>
-     <Link to='/create-post'>Create post</Link>
+     <Link to='/createpost'>Create post</Link>
      <button className='login-btn'>Sign out</button>
     </nav>
   )
