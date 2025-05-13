@@ -28,7 +28,7 @@ const App = () => {
         <Route path='/register' element={<Register setIsAuth={setIsAuth} />} />
         <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
         <Route path='/reset' element={<Reset />} />
-        <Route path='/createpost' element={<Createform />} />
+        <Route path='/createpost' element={<Createform isAuth={isAuth}/>} />
        </Routes>    
     </div>
   )
