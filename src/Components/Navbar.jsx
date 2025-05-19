@@ -1,13 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({isAuth, logout}) => {
   return (
     <nav className='nav'>
      <Link to='/' >Blog</Link>
+
+     {
+      !isAuth ? (  <Link to='/login'>Login</Link> ):(
+        <>
+
      <Link to='/login'>Login</Link>
      <Link to='/createpost'>Create post</Link>
-     <button className='login-btn'>Sign out</button>
+     <button className="login-btn" onClick={logout}>Sign Out</button>
+        </>
+      )
+     }
     </nav>
   )
 }
