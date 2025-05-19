@@ -5,11 +5,12 @@ import Register from './Pages/Register';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './Pages/Login';
 import Reset from './Pages/Reset';
-import { auth } from '../src/Firebaseconfig';
+import { auth } from './Firebaseconfig';
 import { signOut } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import Createform from './Pages/Createform';
+import EditPost from './Pages/Editpost';
 
 const App = () => {
 
